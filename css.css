@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(219, 214, 198);
+}
+
+.nav-inici {
+    background-color: #fff;
+    padding: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+i {
+    font-size: 22px;
+    align-self: center;
+    margin-left: 10px;
+
+}
+
+/* merge with above css */
+.videoc {
+    z-index: -1;
+    /* or absolute or fixed */
+    margin-bottom: 10px;
+
+
+}
+
+video {
+    height: auto;
+    width: 100%;
+    /* % of current element */
+
+}
+
+.nav-inici a {
+    color: rgb(211, 127, 127);
+    text-decoration: none;
+    display: flex;
+
+}
+
+a:hover {
+    color: rgb(219, 214, 198);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10PX;
+    color: rgb(211, 127, 127);
+    font-size: 38PX;
+    font-weight: bolder;
+    border: 1px solid rgb(211, 127, 127);
+    font-family: 'Aboreto', cursive;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.nav .nav-link {
+    border: 1px solid rgb(211, 127, 127, .2);
+    color: rgb(211, 127, 127);
+    margin: 5px;
+}
+
+.nav .nav-link.active {
+    background-color: rgb(211, 127, 127, .6);
+    color: white;
+
+}
+
+#pills-veggie,
+#pills-noveggie {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 20px;
+
+
+}
+
+.tab-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-content .tab-pane {
+    visibility: hidden;
+    position: absolute;
+}
+
+.tab-content .tab-pane.active {
+    visibility: visible;
+    position: relative;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h3 {
+    font-weight: bolder;
+    font-size: 34px;
+}
+
+.card {
+    width: 450px;
+    height: 520px;
+    margin: 5px;
+    background: transparent;
+    border: none;
+    margin: 10px;
+
+}
+
+.img-efecto {
+    width: 100%;
+    height: 100%;
+
+}
+
+.ingredientes {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    opacity: 0;
+    transition: .8s ease;
+    line-height: 1.3;
+    overflow: none;
+}
+
+.card:hover .ingredientes {
+    opacity: 1;
+}
+
+.card:hover .img-efecto {
+    opacity: 0.3;
+
+}
+
+.menus {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.imgmenu {
+    width: 550px;
+    height: 650PX;
+    margin: 5px;
+}
+
+h2#titolform {
+    margin-top: 40px;
+}
+
+#formulario {
+    max-width: 325px;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    width: auto;
+}
+
+.igvideo {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+@media(max-width: 550px) {
+    .imgmenu {
+        max-width: 340px;
+        max-height: 450px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        width: 100%;
+        height: 450px;
+        margin: 2px;
+
+
+    }
+
+}
+
+
+
+@media(min-width: 551px)and(max-width: 992px) {
+    .card {
+        width: 10px;
+        height: auto;
+    }
+}
+
+
+@media(max-height: 400px) {
+    .card {
+        width: 200px;
+        height: auto;
+    }
+
+    .ingredientes h3,
+    h4 {
+        font-size: 12px;
+
+    }
+}
